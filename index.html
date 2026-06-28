@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curriculum interattivo di Giuseppe Tiano in stile desktop anni Novanta." />
+  <title>Giuseppe Tiano — Curriculum 98</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="desktop" class="desktop" aria-label="Desktop curriculum di Giuseppe Tiano">
+    <div class="desktop-corner">
+      <span>GIUSEPPE TIANO</span>
+      <span>CURRICULUM.EXE</span>
+    </div>
+
+    <section class="desktop-icons" aria-label="Cartelle del curriculum">
+      <button class="desktop-icon" data-window-target="welcome" aria-label="Apri Benvenuto">
+        <span class="icon icon-note"></span>
+        <span>LEGGIMI.TXT</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="profile" aria-label="Apri cartella Profilo">
+        <span class="icon icon-folder"></span>
+        <span>CHI SONO</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="experience" aria-label="Apri cartella Esperienza">
+        <span class="icon icon-briefcase"></span>
+        <span>ESPERIENZA</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="education" aria-label="Apri cartella Formazione">
+        <span class="icon icon-folder blue-folder"></span>
+        <span>FORMAZIONE</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="skills" aria-label="Apri cartella Competenze">
+        <span class="icon icon-chip"></span>
+        <span>COMPETENZE</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="projects" aria-label="Apri cartella Progetti">
+        <span class="icon icon-folder green-folder"></span>
+        <span>PROGETTI</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="contact" aria-label="Apri Contatti">
+        <span class="icon icon-contact"></span>
+        <span>CONTATTI</span>
+      </button>
+
+      <button class="desktop-icon" data-window-target="cv" aria-label="Apri Curriculum stampabile">
+        <span class="icon icon-document"></span>
+        <span>CURRICULUM.DOC</span>
+      </button>
+    </section>
+
+    <section class="desktop-sticker" aria-hidden="true">
+      <span>ONLINE</span>
+      <small>dal 1999<br />con aggiornamenti</small>
+    </section>
+
+    <!-- Finestra di benvenuto -->
+    <section class="window active-window" id="welcome" data-window="welcome" style="left: 228px; top: 88px; width: min(580px, calc(100vw - 260px));" aria-label="Finestra Benvenuto">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon note-mini"></span>LEGGIMI.TXT - Blocco note</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body note-body">
+        <p class="note-kicker">Benvenuto nel curriculum interattivo di</p>
+        <h1>Giuseppe Tiano</h1>
+        <p class="lead">Consulenza per il Terzo Settore, amministrazione digitale e progettazione sociale.</p>
+        <p>
+          Qui non ci sono slide automatiche, scroll infiniti o effetti da startup che vende acqua in lattina.
+          Ci sono cartelle: apri quelle che ti servono.
+        </p>
+        <div class="note-actions">
+          <button type="button" class="win-button primary" data-open-window="experience">Apri esperienza</button>
+          <button type="button" class="win-button" data-open-window="cv">Apri curriculum completo</button>
+        </div>
+        <p class="hint">Suggerimento: doppio clic sulle icone. Su telefono basta un tocco.</p>
+      </div>
+    </section>
+
+    <!-- Profilo -->
+    <section class="window" id="profile" data-window="profile" style="left: 305px; top: 130px; width: min(650px, calc(100vw - 335px));" hidden aria-label="Finestra Profilo">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon folder-mini"></span>CHI SONO - Esplora risorse</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body explorer-body">
+        <aside class="explorer-sidebar">
+          <strong>Esplora</strong>
+          <button type="button" data-open-window="profile" class="tree-item selected">Profilo</button>
+          <button type="button" data-open-window="experience" class="tree-item">Esperienza</button>
+          <button type="button" data-open-window="projects" class="tree-item">Progetti</button>
+          <button type="button" data-open-window="contact" class="tree-item">Contatti</button>
+        </aside>
+        <article class="content-pane profile-pane">
+          <div class="profile-mark">GT</div>
+          <div>
+            <p class="pane-path">C:\CURRICULUM\PROFILO</p>
+            <h2>Giuseppe Tiano</h2>
+            <p class="role-line">Consulente al Terzo Settore · Responsabile amministrativo · Studente di Giurisprudenza</p>
+          </div>
+          <div class="profile-copy">
+            <p>
+              Lavoro tra organizzazione, amministrazione, progettazione sociale e strumenti digitali.
+              Mi occupo di aiutare ETS e realtà associative a rendere più ordinati processi, documenti,
+              attività e comunicazione.
+            </p>
+            <p>
+              Ho un approccio molto pratico: capire il problema, dare una struttura alle cose e costruire
+              soluzioni che le persone possano usare davvero.
+            </p>
+          </div>
+          <dl class="quick-facts">
+            <div><dt>Base</dt><dd>Calabria / Sicilia</dd></div>
+            <div><dt>Ambiti</dt><dd>ETS, amministrazione, digitale</dd></div>
+            <div><dt>Obiettivo</dt><dd>Impatto sociale più organizzato</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <!-- Esperienza -->
+    <section class="window" id="experience" data-window="experience" style="left: 250px; top: 98px; width: min(760px, calc(100vw - 280px));" hidden aria-label="Finestra Esperienza">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon briefcase-mini"></span>ESPERIENZA - Registro professionale</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body records-body">
+        <div class="toolbar"><button type="button" class="toolbar-button">File</button><button type="button" class="toolbar-button">Modifica</button><button type="button" class="toolbar-button">Visualizza</button><span>Ordine: più recente</span></div>
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-date">2026 — oggi</div>
+            <div class="timeline-card">
+              <p class="badge">ATTIVITÀ PROFESSIONALE</p>
+              <h2>TerzoFattore</h2>
+              <h3>Consulenza amministrativa, organizzativa e digitale per ETS</h3>
+              <p>Supporto a enti del Terzo Settore su organizzazione interna, adempimenti documentali, strumenti digitali, progettazione e comunicazione.</p>
+            </div>
+          </article>
+          <article class="timeline-item current">
+            <div class="timeline-date">2021 — oggi</div>
+            <div class="timeline-card">
+              <p class="badge">TERZO SETTORE</p>
+              <h2>Associazione Il Dono APS</h2>
+              <h3>Responsabile amministrativo</h3>
+              <p>Gestione amministrativa e documentale, supporto alla contabilità, coordinamento di procedure interne, digitalizzazione dei flussi e affiancamento a progetti e attività del centro diurno.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2025 — oggi</div>
+            <div class="timeline-card">
+              <p class="badge">WEB E STRUMENTI</p>
+              <h2>TerzoFattore Web</h2>
+              <h3>Siti e strumenti digitali per realtà sociali</h3>
+              <p>Progettazione di siti, piccoli gestionali, dashboard e strumenti pratici pensati per associazioni, professionisti e attività territoriali.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formazione -->
+    <section class="window" id="education" data-window="education" style="left: 330px; top: 145px; width: min(640px, calc(100vw - 360px));" hidden aria-label="Finestra Formazione">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon folder-mini blue-mini"></span>FORMAZIONE - Archivio studi</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body file-list-body">
+        <div class="address-bar">Indirizzo: C:\CURRICULUM\FORMAZIONE</div>
+        <div class="file-list-header"><span>Nome</span><span>Tipo</span><span>Stato</span></div>
+        <article class="file-row">
+          <span class="file-icon doc-file"></span>
+          <div><strong>Giurisprudenza</strong><small>Università degli Studi di Messina</small></div>
+          <span>Corso di laurea magistrale a ciclo unico</span>
+          <span>In corso</span>
+        </article>
+        <article class="file-row">
+          <span class="file-icon certificate-file"></span>
+          <div><strong>Management del Terzo Settore</strong><small>Percorso professionalizzante</small></div>
+          <span>Corso di alta formazione</span>
+          <span>Completato · 2025/2026</span>
+        </article>
+        <article class="file-row">
+          <span class="file-icon doc-file"></span>
+          <div><strong>Formazione continua</strong><small>Amministrazione, ETS, privacy, strumenti digitali</small></div>
+          <span>Aggiornamento professionale</span>
+          <span>In corso</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Competenze -->
+    <section class="window" id="skills" data-window="skills" style="left: 270px; top: 105px; width: min(700px, calc(100vw - 300px));" hidden aria-label="Finestra Competenze">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon chip-mini"></span>COMPETENZE - Pannello di controllo</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body skills-body">
+        <p class="pane-path">C:\CURRICULUM\COMPETENZE\SISTEMA</p>
+        <div class="skill-grid">
+          <article class="skill-box">
+            <h2>Terzo Settore</h2>
+            <ul>
+              <li>Assetti associativi e documentazione interna</li>
+              <li>Organizzazione di servizi e attività</li>
+              <li>Rendicontazione e supporto amministrativo</li>
+              <li>Progettazione sociale e fundraising</li>
+            </ul>
+          </article>
+          <article class="skill-box">
+            <h2>Digitale</h2>
+            <ul>
+              <li>Siti web e strumenti informativi</li>
+              <li>Dashboard, CRM e gestione dati</li>
+              <li>Automazione di procedure ripetitive</li>
+              <li>Comunicazione e presenza online</li>
+            </ul>
+          </article>
+          <article class="skill-box">
+            <h2>Organizzazione</h2>
+            <ul>
+              <li>Processi, modelli e registri operativi</li>
+              <li>Gestione documentale</li>
+              <li>Analisi dei bisogni e soluzione problemi</li>
+              <li>Coordinamento amministrativo</li>
+            </ul>
+          </article>
+          <article class="skill-box">
+            <h2>Lingue</h2>
+            <ul>
+              <li>Italiano: madrelingua</li>
+              <li>Inglese: avanzato</li>
+              <li>Giapponese: apprendimento in corso</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progetti -->
+    <section class="window" id="projects" data-window="projects" style="left: 215px; top: 112px; width: min(820px, calc(100vw - 245px));" hidden aria-label="Finestra Progetti">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon folder-mini green-mini"></span>PROGETTI - Cartella condivisa</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body projects-body">
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-dot">01</span>
+            <h2>Il Dono APS</h2>
+            <p>Supporto alla trasformazione digitale e all’organizzazione amministrativa di un centro diurno per persone adulte con disabilità.</p>
+            <span class="project-tag">AMMINISTRAZIONE · SOCIALE</span>
+          </article>
+          <article class="project-card">
+            <span class="project-dot">02</span>
+            <h2>TerzoFattore</h2>
+            <p>Progetto di consulenza e divulgazione su organizzazione, strumenti e adempimenti per enti del Terzo Settore.</p>
+            <span class="project-tag">ETS · CONSULENZA</span>
+          </article>
+          <article class="project-card">
+            <span class="project-dot">03</span>
+            <h2>TerzoFattore Web</h2>
+            <p>Servizi digitali e siti web costruiti con attenzione a semplicità, autonomia del cliente e utilità quotidiana.</p>
+            <span class="project-tag">WEB · STRUMENTI</span>
+          </article>
+          <article class="project-card">
+            <span class="project-dot">04</span>
+            <h2>TrovaCentro</h2>
+            <p>Piattaforma pensata per rendere più semplice l’incontro tra volontari, enti, attività ed esigenze del territorio.</p>
+            <span class="project-tag">VOLONTARIATO · PIATTAFORMA</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section class="window" id="contact" data-window="contact" style="left: 365px; top: 155px; width: min(560px, calc(100vw - 395px));" hidden aria-label="Finestra Contatti">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon contact-mini"></span>CONTATTI - Rubrica</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body contact-body">
+        <p class="pane-path">C:\CURRICULUM\CONTATTI\RUBRICA</p>
+        <h2>Parliamone</h2>
+        <p>Per collaborazioni, progetti, strumenti digitali o consulenza organizzativa per ETS.</p>
+        <div class="contact-card">
+          <span>EMAIL</span>
+          <a href="mailto:gspptiano@gmail.com">gspptiano@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <span>AREA OPERATIVA</span>
+          <strong>Calabria e Sicilia · collaborazioni anche da remoto</strong>
+        </div>
+        <div class="contact-actions">
+          <a class="win-button primary" href="mailto:gspptiano@gmail.com?subject=Contatto%20dal%20Curriculum%2098">Scrivi una mail</a>
+          <button type="button" class="win-button" data-open-window="cv">Apri CV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV completo -->
+    <section class="window" id="cv" data-window="cv" style="left: 190px; top: 72px; width: min(880px, calc(100vw - 220px));" hidden aria-label="Finestra Curriculum completo">
+      <header class="window-titlebar">
+        <div class="window-title"><span class="mini-icon document-mini"></span>CURRICULUM.DOC - WordPad</div>
+        <div class="window-controls">
+          <button type="button" class="window-control minimize" data-action="minimize" aria-label="Riduci a icona">_</button>
+          <button type="button" class="window-control maximize" data-action="maximize" aria-label="Ingrandisci">□</button>
+          <button type="button" class="window-control close" data-action="close" aria-label="Chiudi">×</button>
+        </div>
+      </header>
+      <div class="window-body cv-body">
+        <div class="word-toolbar">
+          <button type="button" class="toolbar-button">File</button>
+          <button type="button" class="toolbar-button">Modifica</button>
+          <button type="button" class="toolbar-button">Inserisci</button>
+          <span class="toolbar-separator"></span>
+          <button type="button" class="toolbar-button" id="downloadCvButton">Scarica .txt</button>
+          <button type="button" class="toolbar-button" id="printCvButton">Stampa / Salva PDF</button>
+        </div>
+        <article class="cv-paper" id="cvPaper">
+          <header class="cv-heading">
+            <div>
+              <h1>Giuseppe Tiano</h1>
+              <p>Consulenza per il Terzo Settore · Amministrazione digitale · Progettazione sociale</p>
+            </div>
+            <div class="cv-contact-mini">Calabria / Sicilia<br />gspptiano@gmail.com</div>
+          </header>
+          <section>
+            <h2>Profilo</h2>
+            <p>Professionista orientato all’organizzazione e alla digitalizzazione di enti e progetti sociali. Esperienza nella gestione amministrativa di realtà associative, nella costruzione di strumenti operativi e nel supporto a processi documentali e progettuali.</p>
+          </section>
+          <section>
+            <h2>Esperienza</h2>
+            <h3>2026 — oggi · TerzoFattore</h3>
+            <p>Consulenza amministrativa, organizzativa e digitale per ETS.</p>
+            <h3>2021 — oggi · Associazione Il Dono APS</h3>
+            <p>Responsabile amministrativo: organizzazione documentale, supporto amministrativo e contabile, digitalizzazione di flussi e strumenti, affiancamento alle attività progettuali.</p>
+            <h3>2025 — oggi · TerzoFattore Web</h3>
+            <p>Ideazione e sviluppo di siti e strumenti digitali per associazioni, professionisti e attività territoriali.</p>
+          </section>
+          <section>
+            <h2>Formazione</h2>
+            <h3>Giurisprudenza · Università degli Studi di Messina</h3>
+            <p>Corso di laurea magistrale a ciclo unico, in corso.</p>
+            <h3>Management del Terzo Settore</h3>
+            <p>Percorso professionalizzante completato nell’anno 2025/2026.</p>
+          </section>
+          <section>
+            <h2>Competenze</h2>
+            <p>Organizzazione ETS, gestione documentale, supporto amministrativo, progettazione sociale, digitalizzazione di processi, siti web, strumenti gestionali, analisi dei bisogni, comunicazione digitale. Italiano madrelingua, inglese avanzato.</p>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="taskbar" aria-label="Barra delle applicazioni">
+    <button type="button" id="startButton" class="start-button"><span class="start-logo"></span>Avvio</button>
+    <div id="taskButtons" class="task-buttons" aria-label="Finestre aperte"></div>
+    <div class="tray"><span class="tray-pixel"></span><time id="clock"></time></div>
+
+    <nav id="startMenu" class="start-menu" hidden aria-label="Menu Avvio">
+      <div class="start-brand">CURRICULUM<br />98</div>
+      <div class="start-list">
+        <button type="button" data-open-window="profile"><span class="mini-icon folder-mini"></span>Chi sono</button>
+        <button type="button" data-open-window="experience"><span class="mini-icon briefcase-mini"></span>Esperienza</button>
+        <button type="button" data-open-window="projects"><span class="mini-icon folder-mini green-mini"></span>Progetti</button>
+        <hr />
+        <button type="button" data-open-window="cv"><span class="mini-icon document-mini"></span>Curriculum completo</button>
+        <button type="button" data-open-window="contact"><span class="mini-icon contact-mini"></span>Contatti</button>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
